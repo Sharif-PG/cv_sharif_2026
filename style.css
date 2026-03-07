@@ -78,7 +78,8 @@ text-align:justify;
 /* SECTIONS */
 
 section{
-margin-top:16px;
+margin-top:0px;
+padding-top:16px;
 page-break-inside:avoid;
 break-inside:avoid;
 }
@@ -242,6 +243,7 @@ page-break-inside:avoid;
 }
 
 }
+
 
 
 
