@@ -1,8 +1,12 @@
 :root{
---forest:#2f5d50;
---moss:#7a9e7e;
---light:#f5f7f6;
---dark:#2b2b2b;
+
+--green-dark:#1B5E20;
+--green-mid:#2E7D32;
+--green-light:#66BB6A;
+--green-soft:#E8F5E9;
+
+--text:#263238;
+
 }
 
 *{
@@ -12,17 +16,36 @@ padding:0;
 }
 
 body{
+
 font-family: "Segoe UI", Arial, sans-serif;
-background:white;
-color:var(--dark);
-line-height:1.4;
+background:#dfe5e2;
+color:var(--text);
+
+display:flex;
+justify-content:center;
+
+padding:30px;
+
 }
 
-.container{
-max-width:850px;
-margin:auto;
-padding:18px;
+
+/* PAGE LOOKS LIKE PAPER */
+
+.page{
+
+background:white;
+
+width:210mm;
+min-height:297mm;
+
+padding:20mm;
+
+box-shadow:0 0 12px rgba(0,0,0,0.15);
+
 }
+
+
+/* HEADER */
 
 header{
 text-align:center;
@@ -30,13 +53,12 @@ margin-bottom:18px;
 }
 
 h1{
-font-size:32px;
-color:var(--forest);
+font-size:30px;
+color:var(--green-dark);
 }
 
 h2{
 font-size:18px;
-font-weight:500;
 margin-bottom:6px;
 }
 
@@ -50,16 +72,29 @@ text-align:justify;
 font-size:14px;
 }
 
+
+/* SECTIONS */
+
 section{
 margin-top:16px;
+
+page-break-inside:avoid;
+break-inside:avoid;
 }
 
 h3{
-color:var(--forest);
-border-bottom:2px solid var(--moss);
+
+color:var(--green-dark);
+
+border-bottom:2px solid var(--green-light);
+
 padding-bottom:4px;
 margin-bottom:10px;
+
 }
+
+
+/* EXPERIENCE ITEMS */
 
 .item{
 margin-bottom:10px;
@@ -67,37 +102,52 @@ margin-bottom:10px;
 
 .item h4{
 font-size:15px;
-font-weight:600;
 }
 
 .date{
 font-size:13px;
-color:gray;
+color:#555;
 display:block;
-margin-bottom:4px;
+margin-bottom:3px;
 }
+
 
 /* COURSES */
 
 .courses-grid{
+
 display:grid;
+
 grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+
 gap:8px;
+
 }
 
 .course{
-border:1px solid var(--moss);
+
+background:var(--green-soft);
+
+border-left:4px solid var(--green-mid);
+
 padding:8px;
-border-radius:6px;
-background:var(--light);
+
+border-radius:4px;
+
 height:90px;
+
 display:flex;
 flex-direction:column;
 justify-content:space-between;
+
 }
 
 .course h4{
 font-size:13px;
+}
+
+.course span{
+font-size:12px;
 }
 
 .course p{
@@ -105,36 +155,42 @@ font-size:12px;
 font-weight:600;
 }
 
-/* SKILLS */
 
-.skills-grid{
+/* SKILLS TOOLS LANGUAGES */
+
+.box-grid{
+
 display:flex;
+
 flex-wrap:wrap;
+
 gap:6px;
+
 }
 
-.skill{
-background:var(--forest);
+.box{
+
+background:var(--green-mid);
+
 color:white;
-padding:4px 8px;
+
+padding:6px 10px;
+
 border-radius:4px;
+
 font-size:13px;
+
 }
 
-/* TOOLS */
-
-.tools-grid{
-display:flex;
-flex-wrap:wrap;
-gap:6px;
-}
+/* variants */
 
 .tool{
-background:var(--moss);
-color:white;
-padding:4px 8px;
-border-radius:4px;
-font-size:13px;
+background:var(--green-light);
+color:#0d2c16;
+}
+
+.lang{
+background:var(--green-dark);
 }
 
 
@@ -143,28 +199,26 @@ font-size:13px;
 @media print{
 
 body{
-font-size:11px;
+background:white;
+padding:0;
 }
 
-.container{
-max-width:100%;
-padding:10px;
+.page{
+
+box-shadow:none;
+
+margin:0;
+
+width:100%;
+min-height:auto;
+
+padding:15mm;
+
 }
 
-h1{
-font-size:24px;
-}
-
-h2{
-font-size:16px;
-}
-
-h3{
-font-size:15px;
-}
-
-.course{
-height:80px;
+section{
+break-inside:avoid;
+page-break-inside:avoid;
 }
 
 }
