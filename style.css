@@ -79,7 +79,7 @@ text-align:justify;
 
 section{
 margin-top:0px;
-padding-top:12px;
+padding-top:10px;
 page-break-inside:avoid;
 break-inside:avoid;
 }
@@ -101,14 +101,14 @@ font-size:15px;
 /* EXPERIENCE / EDUCATION */
 
 .item{
-margin-bottom:10px;
+margin-bottom:9px;
 }
 
 .item-header{
 display:flex;
 justify-content:space-between;
 align-items:baseline;
-gap:4px;
+gap:2px;
 }
 
 .item-header h4{
@@ -243,6 +243,7 @@ page-break-inside:avoid;
 }
 
 }
+
 
 
 
