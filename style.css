@@ -217,7 +217,7 @@ background:var(--green-dark);
 
 @page{
 size:A4;
-margin:8mm;
+margin:6mm;
 }
 
 @media print{
@@ -231,7 +231,7 @@ font-size:11px;
 .page{
 box-shadow:none;
 width:100%;
-padding:14mm;
+padding:8mm;
 }
 
 section{
@@ -240,6 +240,7 @@ page-break-inside:avoid;
 }
 
 }
+
 
 
 
