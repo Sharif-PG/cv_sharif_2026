@@ -52,11 +52,11 @@ box-shadow:0 0 10px rgba(0,0,0,0.12);
 
 header{
 text-align:center;
-margin-bottom:10px;
+margin-bottom:6px;
 }
 
 h1{
-font-size:26px;
+font-size:24px;
 color:var(--green-dark);
 }
 
@@ -107,11 +107,12 @@ margin-bottom:4px;
 display:flex;
 justify-content:space-between;
 align-items:baseline;
-gap:10px;
+gap:4px;
 }
 
 .item-header h4{
 font-size:13.5px;
+line-height:1.15;
 }
 
 .date{
@@ -124,12 +125,13 @@ white-space:nowrap;
 /* LISTS */
 
 ul{
-margin-top:3px;
-padding-left:16px;
+margin-top:2px;
+padding-left:14px;
 }
 
 li{
-margin-bottom:2px;
+margin-bottom:1px;
+line-height:1.2;
 }
 
 
@@ -155,7 +157,7 @@ padding:7px;
 
 border-radius:4px;
 
-height:78px;
+height:54px;
 
 display:flex;
 flex-direction:column;
@@ -240,6 +242,7 @@ page-break-inside:avoid;
 }
 
 }
+
 
 
 
