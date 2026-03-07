@@ -41,7 +41,7 @@ background:white;
 width:210mm;
 min-height:297mm;
 
-padding:10mm;
+padding:2mm;
 
 box-shadow:0 0 10px rgba(0,0,0,0.12);
 
@@ -240,4 +240,5 @@ page-break-inside:avoid;
 }
 
 }
+
 
