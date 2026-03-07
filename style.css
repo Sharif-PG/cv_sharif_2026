@@ -78,7 +78,7 @@ text-align:justify;
 /* SECTIONS */
 
 section{
-margin-top:12px;
+margin-top:16px;
 page-break-inside:avoid;
 break-inside:avoid;
 }
@@ -112,7 +112,7 @@ gap:4px;
 
 .item-header h4{
 font-size:13.5px;
-line-height:1.15;
+line-height:1.2;
 }
 
 .date{
@@ -242,6 +242,7 @@ page-break-inside:avoid;
 }
 
 }
+
 
 
 
