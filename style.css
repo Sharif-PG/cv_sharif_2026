@@ -41,7 +41,7 @@ background:white;
 width:210mm;
 min-height:297mm;
 
-padding:16mm;
+padding:8mm;
 
 box-shadow:0 0 10px rgba(0,0,0,0.12);
 
@@ -217,7 +217,7 @@ background:var(--green-dark);
 
 @page{
 size:A4;
-margin:14mm;
+margin:8mm;
 }
 
 @media print{
@@ -240,6 +240,7 @@ page-break-inside:avoid;
 }
 
 }
+
 
 
 
