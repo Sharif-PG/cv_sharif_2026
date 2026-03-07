@@ -1,0 +1,62 @@
+/* Configuración General */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #555;
+    --accent-color: #3498db;
+    --text-color: #333;
+    --bg-white: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    color: var(--text-color);
+}
+
+.cv-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--bg-white);
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Tipografía */
+h1 { color: var(--primary-color); margin-bottom: 5px; text-transform: uppercase; }
+h3 { border-bottom: 2px solid var(--accent-color); padding-bottom: 5px; color: var(--primary-color); }
+.subtitle { font-size: 1.2rem; color: var(--secondary-color); margin-top: 0; }
+
+/* Layout */
+.main-content {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.sidebar { flex: 1; }
+.details { flex: 3; }
+
+.item { margin-bottom: 20px; }
+.item h4 { margin: 0; color: #444; }
+.item span { font-size: 0.9rem; color: #777; font-style: italic; }
+
+/* Listas con check */
+ul { list-style: none; padding-left: 0; }
+ul li::before {
+    content: "✓ ";
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Optimización para PDF (2 hojas) */
+@media print {
+    body { background: none; padding: 0; }
+    .cv-container { box-shadow: none; width: 100%; max-width: 100%; margin: 0; padding: 20px; }
+    
+    /* Evita que los bloques se corten a la mitad */
+    .item, section {
+        page-break-inside: avoid;
+    }
+}
