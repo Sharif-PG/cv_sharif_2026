@@ -39,7 +39,7 @@ padding:5px;
 background:white;
 
 width:210mm;
-min-height:calc(297mm - 20mm);
+min-height:297mm;
 
 padding:10mm;
 
@@ -243,6 +243,7 @@ page-break-inside:avoid;
 }
 
 }
+
 
 
 
