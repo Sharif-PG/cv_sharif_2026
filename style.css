@@ -78,7 +78,7 @@ text-align:justify;
 /* SECTIONS */
 
 section{
-margin-top:6px;
+margin-top:12px;
 page-break-inside:avoid;
 break-inside:avoid;
 }
@@ -242,6 +242,7 @@ page-break-inside:avoid;
 }
 
 }
+
 
 
 
