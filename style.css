@@ -89,8 +89,8 @@ color:var(--green-dark);
 
 border-bottom:2px solid var(--green-light);
 
-padding-bottom:3px;
-margin-bottom:4px;
+padding-bottom:6px;
+margin-bottom:10px;
 
 font-size:15px;
 
@@ -100,7 +100,7 @@ font-size:15px;
 /* EXPERIENCE / EDUCATION */
 
 .item{
-margin-bottom:4px;
+margin-bottom:10px;
 }
 
 .item-header{
@@ -242,6 +242,7 @@ page-break-inside:avoid;
 }
 
 }
+
 
 
 
