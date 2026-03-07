@@ -79,7 +79,7 @@ text-align:justify;
 
 section{
 margin-top:0px;
-padding-top:16px;
+padding-top:12px;
 page-break-inside:avoid;
 break-inside:avoid;
 }
@@ -243,6 +243,7 @@ page-break-inside:avoid;
 }
 
 }
+
 
 
 
