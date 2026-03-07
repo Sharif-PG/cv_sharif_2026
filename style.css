@@ -27,7 +27,7 @@ color:var(--text);
 display:flex;
 justify-content:center;
 
-padding:15px;
+padding:5px;
 
 }
 
@@ -41,7 +41,7 @@ background:white;
 width:210mm;
 min-height:297mm;
 
-padding:2mm;
+padding:16mm;
 
 box-shadow:0 0 10px rgba(0,0,0,0.12);
 
@@ -240,5 +240,6 @@ page-break-inside:avoid;
 }
 
 }
+
 
 
